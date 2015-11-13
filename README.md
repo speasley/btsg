@@ -2,7 +2,7 @@
 
 ## Design framework
 
-Let's try [Live Wires](http://www.agnostic.io/livewires).
+Let's try [Live Wires](http://www.agnostic.io/livewires). ✔︎
 
 ## Features
 
