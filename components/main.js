@@ -17,11 +17,15 @@ class List extends React.Component {
 
   class ListEntry extends React.Component {
     render() {
+      let dateString = <span>[{this.props.date}]</span>;
+      if(this.props.date === null) {
+        dateString = <span></span>;
+      }
       return (
-      <div>
-      <dt>[{this.props.date}] <a href={this.props.link}>{this.props.title}</a></dt>
-      <dd>{this.props.description}</dd>
-      </div>
+      	<div>
+          <dt>{dateString}<a href={this.props.link}>{this.props.title}</a></dt>
+          <dd>{this.props.description}</dd>
+        </div>
       );
     }
   }
