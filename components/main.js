@@ -35,8 +35,13 @@ class List extends React.Component {
             return (
               <div>
                 <div className="row">
-                  <div className="medium-12 columns">
-                    <h2>BTSG YYC</h2>
+                  <div className="medium-12 columns" style={{backgroundColor:"FF715B"}}>
+                    <h3>BTSG YYC</h3>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="medium-12 columns" >
+                    <h4>About</h4>
                   </div>
                 </div>
                 <div className="row">
