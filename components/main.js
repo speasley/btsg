@@ -33,29 +33,15 @@ class List extends React.Component {
   class SupportApp extends React.Component {
     render() {
             return (
-              <div>
-                <div className="row">
-                  <div className="medium-12 columns" style={{backgroundColor:"FF715B"}}>
-                    <h3>BTSG YYC</h3>
-                  </div>
+              <div className="row">
+                <div className="small-12 medium-6 columns">
+                  <List items={this.props.events} listTitle={"Events"} classInfo={"callout secondary"}/>
                 </div>
-                <div className="row">
-                  <div className="medium-12 columns" >
-                    <h4>About</h4>
-                  </div>
+                <div className="small-12 medium-6 columns">
+                  <List items={books} listTitle={"Books"} classInfo={"callout secondary"}/>
                 </div>
-                <div className="row">
-                  <div className="medium-7 columns">
-                    <p>This is the home for the YYC brain tumour support group, support site.  Our goal is to be a place to share resources that might be helpful to those attending support groups but just can't remember what book or website that someone has mentioned!  Happens to us pretty much everything we go!</p>
-                    <p>
-                    Please feel free to send us links, books, or other resources that you think might be helpful and we can try and get them up on the site.  If you are looking for a resource that was mentioned, send a request, we will publish it and hopefully someone remembers what it was.
-                    </p>
-                  </div>
-                  <div className="medium-5 columns">
-                    <List items={this.props.events} listTitle={"Events"} classInfo={"callout secondary"}/>
-                    <List items={books} listTitle={"Books"} classInfo={"callout secondary"}/>
-                    <List items={requests} listTitle={"Remember 4 Me"} classInfo={"callout secondary"}/>
-                  </div>
+                <div className="small-12 columns">
+                  <List items={requests} listTitle={"Remember 4 Me"} classInfo={"callout secondary"}/>
                 </div>
               </div>
             );
