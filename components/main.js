@@ -2,64 +2,70 @@ class List extends React.Component {
   render() {
     let items = this.props.items.map((item, index) => {
       return <ListEntry {...item} key={index}/>
-      });
+    });
 
-      return (
+    return (
       <div className={this.props.classInfo}>
         <h4>{this.props.listTitle}</h4>
         <dl>
           {items}
         </dl>
       </div>
-      );
-    }
+    );
   }
+}
 
-  class ListEntry extends React.Component {
-    render() {
-      let dateString = <span>[{this.props.date}]&nbsp;</span>;
-      if(this.props.date === null) {
-        dateString = <span></span>;
-      }
-      return (
-      	<div>
-          <dt>{dateString}<a href={this.props.link}>{this.props.title}</a></dt>
-          <dd>{this.props.description}</dd>
+class ListEntry extends React.Component {
+  render() {
+    let dateString = <span>[{this.props.date}]&nbsp;</span>;
+    if(this.props.date === null) {
+      dateString = <span></span>;
+    }
+    return (
+      <div>
+        <dt>{dateString}<a href={this.props.link}>{this.props.title}</a></dt>
+        <dd>{this.props.description}</dd>
+      </div>
+    );
+  }
+}
+
+class NextMeeting extends React.Component {
+  render() {
+    return (
+      <div>
+        <h6>Next meeting:</h6>
+        <h5>Wednesday, {this.props.date} {this.props.time}</h5>
+        <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
+        <p>{this.props.description}</p>
+      </div>
+    );
+  }
+}
+
+class SupportApp extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="row">
+          <div className="callout small-12 columns text-center">
+            <NextMeeting date={meeting.date} time={meeting.time} description={meeting.description}/>
+          </div>
         </div>
-      );
-    }
+        <div className="row">
+          <div className="small-12 medium-6 columns">
+            <List items={this.props.events} listTitle={"Events"} classInfo={"callout"}/>
+          </div>
+          <div className="small-12 medium-6 columns">
+            <List items={books} listTitle={"Books"} classInfo={"callout"}/>
+          </div>
+          <div className="small-12 columns">
+            <List items={requests} listTitle={"Remember 4 Me"} classInfo={"callout"}/>
+          </div>
+        </div>
+      </div>
+    );
   }
+}
 
-  class SupportApp extends React.Component {
-    render() {
-            return (
-              <div>
-                <div className="row">
-                  <div className="medium-12 columns" style={{backgroundColor:"FF715B"}}>
-                    <h3>BTSG YYC</h3>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="medium-12 columns" >
-                    <h4>About</h4>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="medium-7 columns">
-                    <p>This is the home for the YYC brain tumour support group, support site.  Our goal is to be a place to share resources that might be helpful to those attending support groups but just can't remember what book or website that someone has mentioned!  Happens to us pretty much everything we go!</p>
-                    <p>
-                    Please feel free to send us links, books, or other resources that you think might be helpful and we can try and get them up on the site.  If you are looking for a resource that was mentioned, send a request, we will publish it and hopefully someone remembers what it was.
-                    </p>
-                  </div>
-                  <div className="medium-5 columns">
-                    <List items={this.props.events} listTitle={"Events"} classInfo={"callout secondary"}/>
-                    <List items={books} listTitle={"Books"} classInfo={"callout secondary"}/>
-                    <List items={requests} listTitle={"Remember 4 Me"} classInfo={"callout secondary"}/>
-                  </div>
-                </div>
-              </div>
-            );
-    }
-  }
-
-ReactDOM.render(<SupportApp events={events}/>, document.getElementById('react-here'));
+ReactDOM.render(<SupportApp events={events} meeting={meeting} />, document.getElementById('react-here'));
