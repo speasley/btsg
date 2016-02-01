@@ -3,7 +3,7 @@ events = [
   date: '2015-12-24',
   time: null,
   title: 'Party',
-  description: 'A big long party about trees and tuna.',
+  description: 'A big long description about a party.',
   link: 'http://google.com'
 },
 {

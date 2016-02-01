@@ -3,14 +3,14 @@ books = [
   date: null,
   time: null,
   title: 'Book on other Books',
-  description: 'A big long party about trees and tuna.',
+  description: 'A big description about books about other books with books in the title.',
   link: 'http://google.com'
 },
 {
   date: null,
   time: null,
   title: 'Book on books',
-  description: 'A short thing about trees and turkey.',
+  description: 'Main book about books, with trees on the cover illustrated by Santa Claus.',
   link: 'http://google.com'
 }
 ]
