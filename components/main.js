@@ -59,7 +59,12 @@ class SupportApp extends React.Component {
           <div className="small-12 medium-6 columns">
             <List items={books} listTitle={"Books"} classInfo={"callout"}/>
           </div>
-          <div className="small-12 columns">
+        </div>
+        <div className="row">
+          <div className="small-12 medium-6 columns">
+            <List items={links} listTitle={"Links & Videos"} classInfo={"callout"}/>
+          </div>
+          <div className="small-12 medium-6 columns">
             <List items={requests} listTitle={"Remember 4 Me"} classInfo={"callout"}/>
           </div>
         </div>
