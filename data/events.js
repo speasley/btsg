@@ -1,13 +1,13 @@
 events = [
 {
-  date: '2015-12-24',
+  date: 'Dec 24, 2016',
   time: null,
   title: 'Party',
   description: 'A big long description about a party.',
   link: 'http://google.com'
 },
 {
-  date: '2015-12-25',
+  date: 'Dec 25, 2016',
   time: null,
   title: 'Christmas',
   description: 'A short thing about trees and turkey.',

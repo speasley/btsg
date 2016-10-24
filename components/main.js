@@ -17,7 +17,7 @@ class List extends React.Component {
 
 class ListEntry extends React.Component {
   render() {
-    let dateString = <span>[{this.props.date}]&nbsp;</span>;
+    let dateString = <span>{this.props.date}&nbsp;</span>;
     if(this.props.date === null) {
       dateString = <span></span>;
     }
@@ -38,6 +38,17 @@ class NextMeeting extends React.Component {
         <h4>Wednesday, {this.props.date} {this.props.time}</h4>
         <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
         <p>{this.props.description}</p>
+      </div>
+    );
+  }
+}
+
+class Recall extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>Do you recall?</h3>
+        <p>{this.props.date} {this.props.description}</p>
       </div>
     );
   }
