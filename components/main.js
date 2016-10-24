@@ -45,6 +45,9 @@ class NextMeeting extends React.Component {
 
 class Recall extends React.Component {
   render() {
+    if (!this.props.description) {
+      return null;
+    }
     return (
       <div>
         <h3>Do you recall?</h3>
@@ -64,11 +67,12 @@ class SupportApp extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="medium-6 columns">
-            <h3>Do you recall?</h3>
-            <p>Someone asked about a thing. Do you know about the thing?</p>
-          </div>
-          <List items={this.props.events} listTitle={"Events"} classInfo={"medium-6 columns"}/>
+          {recall.description &&
+            <div className="medium-6 columns">
+              <Recall date={recall.date} description={recall.description}/>
+            </div>
+          }
+          <List items={this.props.events} listTitle={"Events"} classInfo={recall.description ? 'medium-6 columns' : 'medium-12 columns'}/>
         </div>
         <div className="row">
           <List items={books} listTitle={"Books"} classInfo={"medium-12 columns"}/>
