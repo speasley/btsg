@@ -4,7 +4,6 @@ h1 span {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
-.callout.secondary {
-  background-color: none;
-  border: none;
+.hero {
+  padding: 2rem 0 1.25rem 0;
 }
