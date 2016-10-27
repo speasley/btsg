@@ -19,7 +19,7 @@ class ListEntry extends React.Component {
   render() {
     let dateString = <span>{this.props.date}&nbsp;</span>;
     if(this.props.date === null) {
-      dateString = <span></span>;
+      dateString = '';
     }
     return (
       <div>
@@ -33,7 +33,7 @@ class ListEntry extends React.Component {
 class NextMeeting extends React.Component {
   render() {
     return (
-      <div>
+      <div className="primary callout medium-12 columns text-center">
         <h3>Next meeting:</h3>
         <h4>Wednesday, {this.props.date} {this.props.time}</h4>
         <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
@@ -62,9 +62,7 @@ class SupportApp extends React.Component {
     return (
       <div id="content">
         <div className="row">
-          <div className="primary callout medium-12 columns text-center">
-            <NextMeeting date={meeting.date} time={meeting.time} description={meeting.description}/>
-          </div>
+          <NextMeeting date={meeting.date} time={meeting.time} description={meeting.description}/>
         </div>
         <div className="row">
           {recall.description &&
