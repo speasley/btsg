@@ -4,12 +4,20 @@ class List extends React.Component {
       return <ListEntry {...item} key={index}/>
     });
 
+    let output;
+    if(items.length > 0){
+      output = (
+        <div className={this.props.classInfo}>
+          <h3>{this.props.listTitle}</h3>
+          <ul>
+            {items}
+          </ul>
+        </div>
+      )
+    }
     return (
-      <div className={this.props.classInfo}>
-        <h3>{this.props.listTitle}</h3>
-        <ul>
-          {items}
-        </ul>
+      <div>
+        {output}
       </div>
     );
   }
