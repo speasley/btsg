@@ -2,10 +2,10 @@
 
 ## Design framework
 
-- Google Analytics
+- Google Analytics ✓
 
 ## Features
 
 - Local map with resources
-- Resources (books, videos, links)
-- Feedback Email
+- Resources (books, videos, links) ✓
+- Feedback Email ✓
