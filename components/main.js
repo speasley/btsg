@@ -46,6 +46,7 @@ class NextMeeting extends React.Component {
         <h4>Wednesday, {this.props.date} {this.props.time}</h4>
         <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
         <p>{this.props.description}</p>
+        <small><b>CONFIDENTIALITY STATEMENT</b><br />Group members and volunteers have the responsibility to keep all personal information shared during the meeting in strict confidence. This establishes trust among the members. Each group member is free to express opinions knowing that they will remain within the group.</small>
       </div>
     );
   }
