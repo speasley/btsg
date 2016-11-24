@@ -25,14 +25,17 @@ class List extends React.Component {
 
 class ListEntry extends React.Component {
   render() {
-    let dateString = <span>{this.props.date}&nbsp;</span>;
+    let dateString = <small> —{this.props.date}</small>;
     if(this.props.date === null) {
       dateString = '';
     }
+    let triggerWarning = '';
+    if(this.props.triggerWarning === true) {
+      triggerWarning = <span className="warning label">Graphic Content</span>;
+    }
     return (
       <div>
-        <li>{dateString}<a href={this.props.link}>{this.props.title}</a> <span>{this.props.description}</span>
-</li>
+        <li>{triggerWarning}<a href={this.props.link}>{this.props.title}</a> {this.props.description}{dateString}</li>
       </div>
     );
   }
