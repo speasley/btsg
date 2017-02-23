@@ -17,7 +17,7 @@ links = [
   date: 'Oct 23, 2016',
   time: null,
   title: 'What It Feels Like to Perform Brain Surgery',
-  description: 'By Dr. Rahul Jandial',
+  description: 'Dr. Rahul Jandial',
   link: 'http://www.vice.com/read/cracking-the-cranial-vault-what-it-feels-like-to-perform-brain-surgery-dr-rahul-jandial'
 },
 {
@@ -32,7 +32,7 @@ links = [
   date: 'Feb 7, 2017',
   time: null,
   title: 'When Am I Going to Feel Normal Again After Brain Surgery?',
-  description: 'By Geraldine aka The Everywhereist',
+  description: 'Geraldine aka The Everywhereist',
   link: 'http://www.everywhereist.com/when-am-i-going-to-feel-normal-again-after-brain-surgery/'
 }
 ]
