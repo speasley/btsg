@@ -32,7 +32,7 @@ links = [
   date: 'Feb 7, 2017',
   time: null,
   title: 'When Am I Going to Feel Normal Again After Brain Surgery?',
-  description: 'Geraldine aka The Everywhereist',
+  description: 'Geraldine DeRuiter',
   link: 'http://www.everywhereist.com/when-am-i-going-to-feel-normal-again-after-brain-surgery/'
 }
 ]
