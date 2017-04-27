@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 h1 span {
+  color: #f41919;
   display: block;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  font-family: 'Architects Daughter', cursive;
 }
 .hero {
   padding: 2rem 0 1.25rem 0;
