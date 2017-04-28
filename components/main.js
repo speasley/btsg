@@ -88,7 +88,7 @@ class SupportApp extends React.Component {
           <List items={books} listTitle={"Books"} classInfo={"medium-12 columns"}/>
         </div>
         <div className="row">
-          <List items={links} listTitle={"Links & Videos"} classInfo={"medium-12 columns"}/>
+          <List items={links} listTitle={"Links + Videos"} classInfo={"medium-12 columns"}/>
         </div>
       </div>
     );
