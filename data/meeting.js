@@ -1,5 +1,5 @@
 meeting = {
-  date: 'May 17, 2017',
+  date: null,
   time: '6:30pm',
-  description: 'Regular meeting. Newcomers are welcome.'
+  description: 'Our regular meeting cannot be accomodated. Details to come.'
 };

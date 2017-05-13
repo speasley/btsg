@@ -43,15 +43,24 @@ class ListEntry extends React.Component {
 
 class NextMeeting extends React.Component {
   render() {
-    return (
-      <div className="primary callout medium-12 columns text-center">
-        <h3>Next meeting:</h3>
-        <h4>Wednesday, {this.props.date} {this.props.time}</h4>
-        <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
-        <p>{this.props.description}</p>
-        <small><b>CONFIDENTIALITY STATEMENT</b><br />Group members and volunteers have the responsibility to keep all personal information shared during the meeting in strict confidence. This establishes trust among the members. Each group member is free to express opinions knowing that they will remain within the group.</small>
-      </div>
-    );
+    if (!this.props.date) {
+      return (
+        <div className="primary callout medium-12 columns text-center">
+          <h3>Next meeting: TBD</h3>
+          <p>{this.props.description}</p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="primary callout medium-12 columns text-center">
+          <h3>Next meeting:</h3>
+          <h4>Wednesday, {this.props.date} {this.props.time}</h4>
+          <p>Wellspring Calgary &mdash; 1404 Home Rd NW</p>
+          <p>{this.props.description}</p>
+          <small><b>CONFIDENTIALITY STATEMENT</b><br />Group members and volunteers have the responsibility to keep all personal information shared during the meeting in strict confidence. This establishes trust among the members. Each group member is free to express opinions knowing that they will remain within the group.</small>
+        </div>
+      );
+    }
   }
 }
 
