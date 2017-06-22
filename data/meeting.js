@@ -1,5 +1,5 @@
 meeting = {
-  date: 'Wednesday, June 21',
+  date: 'Wednesday, September 20',
   time: '6:30pm',
-  description: 'Summer pot luck! Please join us for some good conversation/friendship and yummy treats before we break for the summer. Email Lori to let her know if you are able to attend and what dish you are bringing. Meetings resume September 20.'
+  description: 'Regular meetings resume. Further details TBD. Newcomers welcomed.'
 };
