@@ -1,5 +1,5 @@
 meeting = {
-  date: 'Wednesday, October 18',
+  date: 'Wednesday, November 15',
   time: '6:30pm',
   description: 'Regular meetings resume. Further details TBD. Newcomers welcomed.'
 };
